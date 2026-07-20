@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模拟飞行联机全指南 | 马磊QQ群461651975</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", Consolas, sans-serif;
+        }
+        body {
+            background-color: #0c111b;
+            color: #e2ebf7;
+            line-height: 1.7;
+        }
+        header {
+            background: #131b2e;
+            padding: 35px 20px;
+            text-align: center;
+            border-bottom: 2px solid #2979ff;
+        }
+        h1 {
+            color: #42a5f5;
+            font-size: 34px;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin-top: 10px;
+            color: #90a4c7;
+            font-size: 16px;
+        }
+        /* 导航目录 */
+        .nav-box {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .nav-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+        .nav-list a {
+            display: block;
+            padding: 10px 20px;
+            background: #1a243d;
+            color: #79b8ff;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+        .nav-list a:hover {
+            background: #2979ff;
+            color: white;
+        }
+        /* 主容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+        section {
+            background: #131b2e;
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 35px;
+            border: 1px solid #223358;
+        }
+        h2 {
+            color: #42a5f5;
+            margin-bottom: 22px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #223358;
+            font-size: 26px;
+        }
+        h3 {
+            color: #82bfff;
+            margin: 20px 0 12px;
+            font-size: 20px;
+        }
+        ul, ol {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #c5d4ee;
+        }
+        .tip {
+            background: #1c2b4a;
+            padding: 16px;
+            border-left: 4px solid #ffb74d;
+            margin: 18px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .warn {
+            background: #381f27;
+            padding: 16px;
+            border-left: 4px solid #ef5350;
+            margin: 18px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        /* 网站卡片布局 */
+        .site-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 22px;
+            margin-top: 20px;
+        }
+        .site-card {
+            background: #1a243d;
+            padding: 22px;
+            border-radius: 12px;
+            border: 1px solid #293b61;
+        }
+        .site-card h4 {
+            color: #42a5f5;
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+        .site-card a {
+            color: #64b5f6;
+            word-break: break-all;
+        }
+        .tag {
+            display: inline-block;
+            padding: 3px 10px;
+            font-size: 13px;
+            border-radius: 20px;
+            margin-right: 6px;
+            margin-top: 8px;
+        }
+        .tag-cn {
+            background: #1976d233;
+            color: #79b8ff;
+        }
+        .tag-en {
+            background: #00897b33;
+            color: #4cdbc4;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #60749c;
+            background: #101624;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainWrap">
+        <header>
+            <h1>✈ 模拟飞行VATSIM联机完整指南</h1>
+        </header>
+
+        <div class="nav-box">
+            <div class="nav-list">
+                <a href="#pre">一、联机前置准备</a>
+                <a href="#step">二、联机分步操作流程</a>
+                <a href="#radio">三、标准无线电通话话术</a>
+                <a href="#rule">四、联机禁止违规规则</a>
+                <a href="#plan">五、飞行计划提交方法</a>
+                <a href="#qq">六、我的QQ群</a>
+                <a href="#web-cn">七、国内中文分享社区</a>
+                <a href="#web-en">八、国外全球专业平台</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- 我的QQ群板块 -->
+            <section id="qq">
+                <h2>我的QQ群交流群</h2>
+                <div class="site-card">
+                    <h4>加入我的联机交流群</h4>
+                    <p>点击下方链接可加入我的QQ群，与我和其他飞友一起分享联机经验、素材、航线和管制实录。</p>
+                    <a href="https://jq.qq.com/?_wv=1027&k=461651975" target="_blank">https://jq.qq.com/?_wv=1027&k=461651975</a>
+                    <span class="tag tag-cn">QQ群</span>
+                    <span class="tag tag-cn">飞行交流</span>
+                </div>
+            </section>
+
+            <!-- 板块1：联机前置准备 -->
+            <section id="pre">
+                <h2>一、VATSIM联机前置准备</h2>
+                <h3>1. 必备软件</h3>
+                <ol>
+                    <li><strong>VATSIM账号</strong>：官网 vatsim.net 注册，完成邮箱验证，获取专属CID联机编号</li>
+                    <li><strong>联机客户端Swift</strong>：轻量化通用客户端，支持MSFS2020/2024、P3D、X-Plane全模拟器</li>
+                    <li>模拟飞行本体：微软模拟飞行、Prepar3D、X-Plane 12</li>
+                    <li>配套插件：CSL机型模型包（解决联机飞机显示方块）、导航数据Navigraph</li>
+                </ol>
+                <h3>2. 账号基础要求</h3>
+                <ul>
+                    <li>注册填写真实邮箱，无需考试即可飞行；管制席位需要完成理论自测</li>
+                    <li>呼号规范：航空公司三字码+航班号，例 CES2107、KLM642</li>
+                    <li>全程开启麦克风，听从管制实时语音指挥</li>
+                </ul>
+                <div class="tip">
+                    💡 新手优先选择亚太空域、国内机场（ZGGG广州、ZBAA北京、ZSSS上海），中文管制多，更容易上手
+                </div>
+            </section>
+
+            <!-- 板块2：联机分步操作 -->
+            <section id="step">
+                <h2>二、完整联机操作步骤（Swift客户端）</h2>
+                <ol>
+                    <li>安装Swift客户端，登录你的VATSIM CID与密码</li>
+                    <li>启动模拟飞行，完成冷舱启动、设置航路、燃油、进近程序</li>
+                    <li>Swift内选择对应模拟器，建立游戏数据实时连接</li>
+                    <li>查询机场在线管制，填写对应无线电频率；无管制填通用守听122.800</li>
+                    <li>设置航班呼号，地面应答机输入默认地面编码</li>
+                    <li>提前提交IFR仪表飞行计划（长途民航必须IFR）</li>
+                    <li>点击Connect连接VATSIM服务器，上线后立刻向地面管制发起滑出申请</li>
+                    <li>全程跟随管制指令，禁止私自更改高度、航向、速度</li>
+                </ol>
+            </section>
+
+            <!-- 板块3：无线电通话话术 -->
+            <section id="radio">
+                <h2>三、标准无线电通话话术（国内空域通用）</h2>
+                <h3>1. 地面滑出申请</h3>
+                <p>【呼号】，停机位XX，请求滑出跑道XX，离场程序XX，目的地XXXX，巡航高度FLXXX</p>
+                <h3>2. 起飞许可复述</h3>
+                <p>收到跑道XX起飞许可，离场程序XX，应答机XXXX，【呼号】</p>
+                <h3>3. 进近联系进近管制</h3>
+                <p>【呼号】，收到雷达引导，当前高度XXX英尺，请求跑道XX ILS仪表进近许可</p>
+                <h3>4. 落地脱离跑道</h3>
+                <p>【呼号】，跑道XX落地，滑行道XX脱离，申请滑回停机位XX</p>
+            </section>
+
+            <!-- 板块4：联机违规规则 -->
+            <section id="rule">
+                <h2>四、联机违规红线（违规会封号/禁飞）</h2>
+                <div class="warn">
+                    ⚠ 以下行为严格禁止，轻则警告，重则永久封禁VATSIM账号
+                </div>
+                <ul>
+                    <li>无视管制指令，擅自改变高度、航向、速度</li>
+                    <li>低空乱穿机场空域、恶意撞击其他联机飞机</li>
+                    <li>虚假飞行计划、呼号与航班信息不匹配</li>
+                    <li>无线电辱骂、静音不回复管制呼叫</li>
+                    <li>无间隔近距离尾随其他航空器，不遵守民航标准间隔</li>
+                </ul>
+            </section>
+
+            <!-- 板块5：飞行计划提交 -->
+            <section id="plan">
+                <h2>五、IFR仪表飞行计划提交教程</h2>
+                <ol>
+                    <li>Swift客户端打开Flight Plan面板，或登录VATSIM官网提交</li>
+                    <li>必填项：呼号、机型ICAO代码、起飞机场ICAO、落地机场ICAO、航路、巡航高度</li>
+                    <li>飞行规则选择：长途民航选IFR仪表飞行；低空观光选VFR目视飞行</li>
+                    <li>填写巡航真空速、离场机场标准离场程序SID</li>
+                    <li>提交计划，上线后空管可直接读取你的航班全部信息</li>
+                </ol>
+            </section>
+
+            <!-- 板块6：国内中文社区 -->
+            <section id="web-cn">
+                <h2>六、国内中文 截图/视频/联机讨论社区</h2>
+                <div class="site-grid">
+                    <div class="site-card">
+                        <h4>FSXCN 模拟飞行论坛</h4>
+                        <a href="https://www.fsxcn.com.cn/">https://www.fsxcn.com.cn/</a>
+                        <p>国内老牌专业模拟飞行社区，VATSIM联机专区、座舱截图、起降视频、地景/机模资源、联机组队板块齐全。</p>
+                        <span class="tag tag-cn">中文论坛</span>
+                        <span class="tag tag-cn">资源下载</span>
+                    </div>
+                    <div class="site-card">
+                        <h4>B站哔哩哔哩</h4>
+                        <a href="https://www.bilibili.com/">https://www.bilibili.com/</a>
+                        <p>海量联机完整录像、空客FMGC实操、VATSIM管制对话实录、4K座舱起降视频，评论区可交流联机技巧、约飞。</p>
+                        <span class="tag tag-cn">视频平台</span>
+                        <span class="tag tag-cn">教学教程</span>
+                    </div>
+                    <div class="site-card">
+                        <h4>小红书</h4>
+                        <a href="https://xiaohongshu.com/">https://xiaohongshu.com/</a>
+                        <p>轻量化高清座舱实拍、航线风景截图、短联机Vlog，标签#微软模拟飞行 #VATSIM联机，适合分享日常起降美图。</p>
+                        <span class="tag tag-cn">图片分享</span>
+                        <span class="tag tag-cn">短Vlog</span>
+                    </div>
+                    <div class="site-card">
+                        <h4>知乎模拟飞行话题</h4>
+                        <a href="https://www.zhihu.com/topic/19550438">知乎模拟飞行话题</a>
+                        <p>深度图文长帖，长途联机飞行记录、新手避坑、民航程序科普、高清座舱截图分享。</p>
+                        <span class="tag tag-cn">图文讨论</span>
+                        <span class="tag tag-cn">科普干货</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 板块7：国外全球平台 -->
+            <section id="web-en">
+                <h2>七、国外全球专业模拟飞行分享网站</h2>
+                <div class="site-grid">
+                    <div class="site-card">
+                        <h4>Flightsim.to（MSFS专用）</h4>
+                        <a href="https://flightsim.to/">https://flightsim.to/</a>
+                        <p>微软模拟飞行全球最大社区，Gallery图库上传全球起降截图、座舱图，内置短视频分享VATSIM联机片段，玩家交流插件与联机问题。</p>
+                        <span class="tag tag-en">全球社区</span>
+                        <span class="tag tag-en">图片图库</span>
+                    </div>
+                    <div class="site-card">
+                        <h4>Reddit r/flightsim</h4>
+                        <a href="https://www.reddit.com/r/flightsim/">r/flightsim</a>
+                        <p>百万全球飞友聚集地，每日高清飞行截图、跨洋VATSIM联机记录，多国玩家交流管制沟通、联机故障解决办法。</p>
+                        <span class="tag tag-en">海外论坛</span>
+                        <span class="tag tag-en">图文短视频</span>
+                    </div>
+                    <div class="site-card">
+                        <h4>YouTube</h4>
+                        <a href="https://www.youtube.com/">https://www.youtube.com/</a>
+                        <p>专业长视频：完整长途VATSIM联机全过程、空客/波音FMGC联机设置、实时空管对话实录、4K全球机场起降航拍。</p>
+                        <span class="tag tag-en">长视频教学</span>
+                        <span class="tag tag-en">4K实拍</span>
+                    </div>
+                    <div class="site-card">
+                        <h4>VATSIM官方论坛</h4>
+                        <a href="https://forums.vatsim.net/">https://forums.vatsim.net/</a>
+                        <p>VATSIM专属联机交流平台，官方规则解读、分区组队约飞、管制录音、飞行日志与航线截图分享。</p>
+                        <span class="tag tag-en">联机官方社区</span>
+                        <span class="tag tag-en">空域分区讨论</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>模拟飞行联机私有资料库 · 仅本人可访问</p>
+        </footer>
+    </div>
+</body>
+</html>
